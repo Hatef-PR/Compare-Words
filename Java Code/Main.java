@@ -3,9 +3,9 @@ import java.util.Scanner;
  class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter first word: ");
+        System.out.println("Please enter 1st word: ");
         String word1 = input.nextLine();
-        System.out.println("Please enter second word: ");
+        System.out.println("Please enter 2nd word: ");
         String word2 = input.nextLine();
         System.out.println(compareWords(word1, word2));
     }
@@ -13,7 +13,7 @@ import java.util.Scanner;
     public static boolean compareWords(String a, String b) {
         boolean flag = true;
         if (a.length() != b.length()) {
-            return false;
+            return !flag;
         } else {
             for (int i = 0; i < a.length(); i++) {
                 if (a.charAt(i) != b.charAt(i)) {
